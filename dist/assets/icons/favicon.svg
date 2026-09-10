@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="4" fill="#5a111b"/>
+  <path d="M5 10h54v44H5z" fill="#f3e1bd" stroke="#18130f" stroke-width="3"/>
+  <path d="M5 16h54M5 48h54" stroke="#18130f" stroke-width="3" stroke-dasharray="5 4"/>
+  <text x="32" y="41" text-anchor="middle" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#5a111b">RK</text>
+</svg>

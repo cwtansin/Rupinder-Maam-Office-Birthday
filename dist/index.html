@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2a0b0f">
+  <meta name="description" content="A little retro birthday movie made especially for Rupinder Kaur.">
+  <title>Rupinder Kaur: The Birthday Picture</title>
+  <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/images/rupinder-07.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="./assets/js/greetings.js" defer></script>
+  <script src="./assets/js/app.js" defer></script>
+</head>
+<body class="intro-open">
+  <a class="skip-link" href="#birthday-picture">Skip to the birthday picture</a>
+
+  <div class="film-noise" aria-hidden="true"></div>
+  <div class="film-scratch scratch-one" aria-hidden="true"></div>
+  <div class="film-scratch scratch-two" aria-hidden="true"></div>
+
+  <div class="custom-cursor" id="customCursor" aria-hidden="true">
+    <span id="cursorLabel">LOOK</span>
+  </div>
+
+  <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false" data-cursor="LISTEN">
+    <span class="sound-icon" aria-hidden="true">◉</span>
+    <span id="soundLabel">SOUND OFF</span>
+  </button>
+
+  <section class="film-intro" id="filmIntro" aria-label="Birthday film opening">
+    <div class="intro-projector" aria-hidden="true"></div>
+    <button class="intro-skip" id="skipIntro" type="button">SKIP INTRO</button>
+    <div class="leader-frame" id="leaderFrame">
+      <div class="leader-rings" aria-hidden="true"></div>
+      <div class="leader-cross" aria-hidden="true"></div>
+      <span class="countdown-number" id="countdownNumber">5</span>
+      <span class="leader-meta leader-meta-left">35 MM</span>
+      <span class="leader-meta leader-meta-right">TAKE 01</span>
+    </div>
+    <div class="opening-card" id="openingCard" hidden>
+      <p class="opening-overline">A VERY SPECIAL PRESENTATION</p>
+      <p class="opening-date">11 SEPTEMBER</p>
+      <p class="opening-starring">STARRING</p>
+      <h2>RUPINDER<br>KAUR</h2>
+      <button class="start-picture" id="startPicture" type="button" data-cursor="ROLL FILM">
+        Scroll to start the picture <span aria-hidden="true">↓</span>
+      </button>
+    </div>
+  </section>
+
+  <main id="birthday-picture">
+    <section class="scene hero" id="hero" aria-labelledby="heroTitle">
+      <div class="hero-word hero-word-top" aria-hidden="true">HAPPY</div>
+      <div class="hero-word hero-word-bottom" aria-hidden="true">BIRTHDAY</div>
+      <div class="hero-date-rail" aria-hidden="true">
+        <span>11</span><i></i><span>09</span><i></i><span>26</span>
+      </div>
+
+      <figure class="hero-portrait" data-cursor="MAIN CHARACTER ✨">
+        <div class="poster-frame">
+          <img src="./assets/images/rupinder-07.webp" width="1024" height="1536" alt="Rupinder standing beside a vintage car in a teal jacket">
+        </div>
+        <figcaption>FRAME 07 / THE MAIN CHARACTER ARRIVES</figcaption>
+      </figure>
+
+      <div class="hero-copy">
+        <p class="hero-kicker">ONE DAY ONLY</p>
+        <h1 id="heroTitle">
+          <span>HAPPY</span>
+          <span>Birthday</span>
+          <span>RUPINDER MA'AM!</span>
+        </h1>
+        <p class="hero-line">Today's main character. As she should be.</p>
+      </div>
+
+      <button class="admit-ticket easter-object" type="button" data-easter="ticket" data-cursor="ADMIT ONE">
+        <span>ADMIT ONE</span>
+        <strong>RUPINDER'S BIRTHDAY</strong>
+        <small>11 SEP • SEAT RK</small>
+      </button>
+
+      <p class="hero-note note-one" aria-hidden="true">Picture perfect, obviously ↗</p>
+      <p class="hero-note note-two" aria-hidden="true">Good vibes in every frame ★</p>
+
+      <a class="hero-scroll" href="#archives">
+        <span>SCROLL</span>
+        <i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <section class="date-intertitle" aria-label="Birthday date">
+      <p class="reveal">THERE ARE DAYS</p>
+      <div class="date-numbers reveal" aria-hidden="true">
+        <span>11</span><b>/</b><span>09</span>
+      </div>
+      <p class="reveal">AND THEN THERE IS <em>HER</em> DAY.</p>
+      <div class="stamp-mark" aria-hidden="true">CERTIFIED<br>ICONIC</div>
+    </section>
+
+    <section class="scene archives" id="archives" aria-labelledby="archiveTitle">
+      <header class="archive-header">
+        <p class="section-reel reveal">REEL 02 / FOUND FOOTAGE</p>
+        <h2 id="archiveTitle" class="reveal">THE RUPINDER<br><i>ARCHIVES</i></h2>
+        <p class="archive-intro reveal">Eight frames. Several eras. One very consistent main-character energy.</p>
+      </header>
+
+      <div class="filmstrip-window" id="filmstripWindow" aria-label="A moving film strip of Rupinder's photographs">
+        <div class="filmstrip-track" id="filmstripTrack">
+          <figure class="film-frame">
+            <span class="frame-index">01A</span>
+            <img src="./assets/images/rupinder-01.webp" width="1024" height="1536" loading="lazy" alt="Rupinder seated in a red Punjabi suit">
+            <figcaption>THE RED FRAME</figcaption>
+          </figure>
+          <figure class="film-frame tall">
+            <span class="frame-index">02B</span>
+            <img src="./assets/images/rupinder-02.webp" width="1024" height="1536" loading="lazy" alt="Rupinder seated in a colourful retro outfit">
+            <figcaption>GOOD MUSIC. BETTER TIMES.</figcaption>
+          </figure>
+          <figure class="film-frame">
+            <span class="frame-index">03C</span>
+            <img src="./assets/images/rupinder-03.webp" width="1024" height="1536" loading="lazy" alt="Rupinder smiling in a pink blouse">
+            <figcaption>SMILE, HOLD, PERFECT.</figcaption>
+          </figure>
+          <figure class="film-frame tall">
+            <span class="frame-index">04D</span>
+            <img src="./assets/images/rupinder-04.webp" width="1024" height="1536" loading="lazy" alt="Rupinder relaxing outdoors in a white blouse and sunglasses">
+            <figcaption>GEDI MODE: LOADING</figcaption>
+          </figure>
+          <figure class="film-frame">
+            <span class="frame-index">05E</span>
+            <img src="./assets/images/rupinder-05.webp" width="1024" height="1536" loading="lazy" alt="Rupinder standing in an elegant white dress">
+            <figcaption>STUDIO LIGHTS ON</figcaption>
+          </figure>
+          <figure class="film-frame tall">
+            <span class="frame-index">06F</span>
+            <img src="./assets/images/rupinder-06.webp" width="1024" height="1536" loading="lazy" alt="Rupinder standing in a white blouse and dark trousers">
+            <figcaption>TAKE SIX, NO NOTES</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="photo-table">
+        <div class="table-copy reveal">
+          <span class="hand-arrow" aria-hidden="true">↘</span>
+          <p>Some photographs sit quietly in an album.</p>
+          <strong>These ones demanded screen time.</strong>
+        </div>
+        <button class="loose-photo loose-one easter-object" type="button" data-easter="photo" data-cursor="CLICK 📸" aria-label="Flash the camera on Rupinder's photograph">
+          <img src="./assets/images/rupinder-08.webp" width="1024" height="1536" loading="lazy" alt="Rupinder smiling in a denim jacket">
+          <span>JUN 15 1996</span>
+        </button>
+        <figure class="loose-photo loose-two">
+          <img src="./assets/images/rupinder-06.webp" width="1024" height="1536" loading="lazy" alt="Rupinder posing in a retro photo studio">
+          <figcaption>ARCHIVE COPY / DO NOT FOLD</figcaption>
+        </figure>
+        <figure class="loose-photo loose-three">
+          <img src="./assets/images/rupinder-03.webp" width="1024" height="1536" loading="lazy" alt="Rupinder in pink, photographed in a warm retro room">
+          <figcaption>KEEP THIS ONE ★</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="scene broadcast" id="broadcast" aria-labelledby="broadcastTitle">
+      <div class="broadcast-topline">
+        <p>SIGNAL FOUND • CHANDIGARH • 11 SEP</p>
+        <span class="live-dot">LIVE</span>
+      </div>
+      <div class="broadcast-title-wrap">
+        <p class="broadcast-number" aria-hidden="true">03</p>
+        <h2 id="broadcastTitle">SPECIAL BIRTHDAY<br><i>TRANSMISSION</i></h2>
+        <p>Live from the office, with suspiciously high levels of good vibes.</p>
+      </div>
+
+      <div class="tv-console">
+        <div class="tv-shell">
+          <div class="tv-screen" id="tvScreen">
+            <img id="tvImage" src="./assets/images/rupinder-02.webp" width="1024" height="1536" alt="Rupinder shown inside the birthday broadcast">
+            <div class="tv-scanlines" aria-hidden="true"></div>
+            <div class="tv-glare" aria-hidden="true"></div>
+            <div class="tv-osd">
+              <span id="tvChannelNumber">CH 01</span>
+              <strong id="tvChannelLabel">GOOD VIBES</strong>
+            </div>
+          </div>
+          <div class="tv-panel" aria-label="Birthday broadcast channels">
+            <span class="tv-brand">RUPIVISION</span>
+            <div class="tv-speaker" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="channel-controls">
+              <button type="button" class="channel-button active" data-channel="0" data-cursor="TUNE">01 <span>GOOD VIBES</span></button>
+              <button type="button" class="channel-button" data-channel="1" data-cursor="TUNE">02 <span>GEDI MODE</span></button>
+              <button type="button" class="channel-button" data-channel="2" data-cursor="TUNE">03 <span>BIRTHDAY CHAOS</span></button>
+              <button type="button" class="channel-button" data-channel="3" data-cursor="TUNE">04 <span>TEAM MESSAGES</span></button>
+              <button type="button" class="channel-button" data-channel="4" data-cursor="TUNE">05 <span>ARCHIVES</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="broadcast-caption">
+          <span>PLEASE STAND BY</span>
+          <p>Remote thalle hi hai. Pick a channel.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene messages" id="messages" aria-labelledby="messagesTitle">
+      <div class="message-marquee" aria-hidden="true">
+        <span>INCOMING BIRTHDAY TRANSMISSIONS • OPEN WITH CARE • INCOMING BIRTHDAY TRANSMISSIONS • OPEN WITH CARE •</span>
+      </div>
+      <header class="messages-header">
+        <p class="section-reel reveal">REEL 04 / 20 TELEGRAMS</p>
+        <h2 id="messagesTitle" class="reveal">PEOPLE HAVE<br><i>THINGS TO SAY...</i></h2>
+        <p class="reveal">Choose a name. Open the telegram. There is quite a lot of pyaar in here.</p>
+      </header>
+
+      <div class="telegram-desk">
+        <div class="desk-label" aria-hidden="true">
+          <span>TO: RUPINDER MA'AM</span>
+          <span>DATE: 11.09.26</span>
+          <span>PRIORITY: VERY</span>
+        </div>
+        <div class="message-grid" id="messageGrid" aria-label="Birthday messages from the team"></div>
+      </div>
+
+      <noscript>
+        <div class="noscript-note">Please enable JavaScript to open the birthday telegrams.</div>
+      </noscript>
+    </section>
+
+    <section class="credits-section" id="credits" aria-labelledby="creditsTitle">
+      <div class="credits-viewport">
+        <div class="credits-vignette" aria-hidden="true"></div>
+        <div class="credits-roll" id="creditsRoll">
+          <p class="credits-small">A BIRTHDAY PRODUCTION</p>
+          <h2 id="creditsTitle">ROLL THE<br>CREDITS</h2>
+
+          <div class="credit-block">
+            <span>STARRING</span>
+            <strong>RUPINDER KAUR</strong>
+          </div>
+
+          <div class="credit-block cast-list">
+            <span>FEATURING</span>
+            <strong>Nandini</strong>
+            <strong>Tanveer</strong>
+            <strong>Hardika</strong>
+            <strong>Meenakshi</strong>
+            <strong>Nusrat</strong>
+            <strong>Vishwjeet</strong>
+            <strong>Kulbir</strong>
+            <strong>Navriti</strong>
+            <strong>Manoj</strong>
+            <strong>Sonia</strong>
+            <strong>Himanshi</strong>
+            <strong>Amit</strong>
+            <strong>Navjyot</strong>
+            <strong>Gagan</strong>
+            <strong>Malika</strong>
+            <strong>Sagar</strong>
+            <strong>Chinu</strong>
+            <strong>Anshul</strong>
+            <strong>Kanu</strong>
+            <strong>Shashank</strong>
+          </div>
+
+          <div class="playful-credits">
+            <div><span>GOOD VIBES DEPARTMENT</span><strong>Rupinder Ma'am</strong></div>
+            <div><span>HAIR DEPARTMENT</span><strong>Hopefully thriving this year.</strong></div>
+            <div><span>TRANSPORTATION</span><strong>New car pending. Gedi inevitable.</strong></div>
+            <div><span>PUNJABI SLANG CONSULTANT</span><strong>Rupinder Ma'am</strong></div>
+            <div><span>UNLIMITED PATIENCE</span><strong>Still under production.</strong></div>
+            <div><span>BIRTHDAY CHAOS</span><strong>Entire team.</strong></div>
+          </div>
+
+          <p class="credits-small">NO COPYRIGHT. ONLY PYAAR.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene finale" id="finale" aria-labelledby="finaleTitle">
+      <div class="projector-beam" aria-hidden="true"></div>
+      <figure class="final-portrait" data-cursor="ONE MORE FRAME">
+        <img src="./assets/images/rupinder-01.webp" width="1024" height="1536" loading="lazy" alt="Rupinder in a red Punjabi suit for the final birthday frame">
+        <figcaption>FINAL FRAME / PRINT 01</figcaption>
+      </figure>
+      <div class="finale-copy">
+        <p class="section-reel">THE GRAND FINALE</p>
+        <h2 id="finaleTitle">HAPPY BIRTHDAY<br><i>RUPINDER MA'AM ❤️</i></h2>
+        <p>From all of us, with a whole lot of pyaar.</p>
+        <strong class="punjabi-line" lang="pa">ਹਮੇਸ਼ਾ ਚੜ੍ਹਦੀ ਕਲਾ ਵਿੱਚ ਰਹੋ ✨</strong>
+        <button class="wish-button" id="makeWishButton" type="button" data-cursor="MAKE A WISH 🎂">
+          <span>MAKE A WISH</span>
+          <i aria-hidden="true">✦</i>
+        </button>
+      </div>
+
+      <div class="wish-experience" id="wishExperience" aria-hidden="true">
+        <button class="wish-close" id="wishClose" type="button" aria-label="Close wish scene">CLOSE</button>
+        <p class="wish-overline">ONE WISH. FIVE FLAMES.</p>
+        <h3>Make it a good one.</h3>
+        <div class="candles" id="candles" aria-label="Birthday candles">
+          <button class="candle" type="button" aria-label="Blow out candle one"><span class="flame"></span><span class="wick"></span><span class="candle-stick"></span></button>
+          <button class="candle" type="button" aria-label="Blow out candle two"><span class="flame"></span><span class="wick"></span><span class="candle-stick"></span></button>
+          <button class="candle" type="button" aria-label="Blow out candle three"><span class="flame"></span><span class="wick"></span><span class="candle-stick"></span></button>
+          <button class="candle" type="button" aria-label="Blow out candle four"><span class="flame"></span><span class="wick"></span><span class="candle-stick"></span></button>
+          <button class="candle" type="button" aria-label="Blow out candle five"><span class="flame"></span><span class="wick"></span><span class="candle-stick"></span></button>
+        </div>
+        <p class="candle-instruction" id="candleInstruction">Tap every flame to lock the wish in.</p>
+        <div class="wish-result" id="wishResult" hidden>
+          <strong>Wish locked in.</strong>
+          <span>No take-backs now. 🎂</span>
+        </div>
+      </div>
+
+      <div class="cinema-ending" id="cinemaEnding" aria-live="polite">
+        <span>THE END?</span>
+        <strong>Obviously not. Picture abhi baaki hai. ❤️</strong>
+      </div>
+    </section>
+
+    <div class="final-signature">
+      <span>END PRINT • 11.09.26</span>
+      <p>Made with ❤️ by <button type="button" id="signatureSpark" data-cursor="FLASH">Tanveer Singh</button></p>
+    </div>
+  </main>
+
+  <dialog class="telegram-modal" id="messageDialog" aria-labelledby="messageFrom">
+    <article class="telegram-paper">
+      <div class="telegram-meta">
+        <span>TRANSMISSION <b id="messageNumber">01/20</b></span>
+        <span>11 SEPTEMBER</span>
+      </div>
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close birthday message">CLOSE ×</button>
+      <p class="telegram-to">TO: RUPINDER MA'AM</p>
+      <h3 id="messageFrom">FROM NANDINI</h3>
+      <p class="message-stamp" id="messageStamp">LONG PLAY</p>
+      <div class="message-body" id="messageBody"></div>
+      <nav class="message-nav" aria-label="Navigate birthday messages">
+        <button type="button" id="previousMessage">← PREVIOUS</button>
+        <button type="button" id="allMessages">ALL NAMES</button>
+        <button type="button" id="nextMessage">NEXT →</button>
+      </nav>
+    </article>
+  </dialog>
+
+  <div class="birthday-toast" id="birthdayToast" role="status" aria-live="polite"></div>
+  <div class="confetti-field" id="confettiField" aria-hidden="true"></div>
+  <div class="camera-flash" id="cameraFlash" aria-hidden="true"></div>
+</body>
+</html>
